@@ -1,4 +1,4 @@
-ISO3S = ["tls", "pan", "vut", "tha", "mmr"]
+ISO3S = ["tls", "pan", "vut", "tha", "mmr", "ken", "dji", "sen", "jor"]
 THEME = "education_facilities"
 GEOMS = ["polygons", "points"]
 
