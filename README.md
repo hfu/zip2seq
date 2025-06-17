@@ -1,10 +1,10 @@
 # Demo
 
-- [TLS 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/docs/tls_education_facilities.pmtiles)
-- [PAN 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/docs/pan_education_facilities.pmtiles)
-- [VUT 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/docs/vut_education_facilities.pmtiles)
-- [THA 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/docs/tha_education_facilities.pmtiles)
-- [MMR 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/docs/mmr_education_facilities.pmtiles)
+- [TLS 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/tls_education_facilities.pmtiles)
+- [PAN 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/pan_education_facilities.pmtiles)
+- [VUT 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/vut_education_facilities.pmtiles)
+- [THA 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/tha_education_facilities.pmtiles)
+- [MMR 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/mmr_education_facilities.pmtiles)
 
 # zip2seq
 PoC Pipeline conversion from OCHA HDX OSM extract GeoJSON by HOT into GeoJSON Text Sequence
