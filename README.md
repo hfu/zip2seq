@@ -1,3 +1,11 @@
+# Demo
+
+- [TLS 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/docs/tls_education_facilities.pmtiles)
+- [PAN 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/docs/pan_education_facilities.pmtiles)
+- [VUT 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/docs/vut_education_facilities.pmtiles)
+- [THA 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/docs/tha_education_facilities.pmtiles)
+- [MMR 教育施設 PMTiles デモ](https://pmtiles.io/#url=https://hfu.github.io/zip2seq/docs/mmr_education_facilities.pmtiles)
+
 # zip2seq
 PoC Pipeline conversion from OCHA HDX OSM extract GeoJSON by HOT into GeoJSON Text Sequence
 
@@ -43,22 +51,23 @@ sudo apt install -y curl libarchive-tools jq
 ```sh
 export ISO3="tls"
 export THEME="education_facilities"
-export GEOM="point"
+export GEOM="points"
 ```
 
 ### スクリプト例
 
 ```sh
-URL="https://s3.dualstack.us-east-1.amazonaws.com/production-raw-data-api/ISO3/${ISO3}/${THEME}/${GEOM}s/hotosm_${ISO3}_${THEME}_${GEOM}s_geojson.zip"
-ENTRY="hotosm_${ISO3}_${THEME}_${GEOM}s_geojson.geojson"
+ISO3="tls"
+THEME="education_facilities"
+GEOM="polygons"
+
+URL="https://s3.dualstack.us-east-1.amazonaws.com/production-raw-data-api/ISO3/${ISO3^^}/${THEME}/${GEOM}/hotosm_${ISO3}_${THEME}_${GEOM}_geojson.zip"
+ENTRY="hotosm_${ISO3}_${THEME}_${GEOM}_geojson.geojson"
+LAYER="${ISO3}_${THEME}_${GEOM}"
 
 curl -L "$URL" \
   | bsdtar -xOf - "$ENTRY" \
-  | jq -c --arg iso3 "$ISO3" \
-         --arg theme "$THEME" \
-         --arg geom "$GEOM" \
-    '.features[] 
-     | .tippecanoe = { layer: "\($iso3)_\($theme)_\($geom)" }'
+  | jq -c '.features[] | .tippecanoe = { layer: '"'"$LAYER"'"' }'
 ```
 
 - `curl -L`：リダイレクト追跡しつつ ZIP をストリーム取得  
