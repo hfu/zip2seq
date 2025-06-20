@@ -2,9 +2,9 @@
 
 OCHA HDXのHOT OSM extractから教育施設のGeoJSONデータ（ZIPアーカイブ）をストリーミングで取得し、
 各Featureにtippecanoe用メタデータを付加したGeoJSON Text Sequence（GeoJSONSeq）として出力し、
-複数国・複数ジオメトリ型のデータを結合してPMTiles形式のベクタータイルを自動生成するパイプラインです。
+複数国・複数ジオメトリ型のデータを結合してPMTiles形式のベクタータイルとGeoJSONファイルを自動生成するパイプラインです。
 
-This pipeline streams education facility GeoJSON data (ZIP archive) from HOT OSM extracts on OCHA HDX, adds tippecanoe metadata to each feature, outputs as GeoJSON Text Sequence (GeoJSONSeq), merges data from multiple countries and geometry types, and automatically generates PMTiles vector tiles.
+This pipeline streams education facility GeoJSON data (ZIP archive) from HOT OSM extracts on OCHA HDX, adds tippecanoe metadata to each feature, outputs as GeoJSON Text Sequence (GeoJSONSeq), merges data from multiple countries and geometry types, and automatically generates PMTiles vector tiles and GeoJSON files.
 
 ## Demo / デモ
 
