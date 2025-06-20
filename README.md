@@ -68,3 +68,7 @@ See [LICENSE](LICENSE) for details (MIT License).
 OSMデータのライセンスは ODbL です。
 
 OSM data is licensed under ODbL.
+
+HOT OSM Extracts には教育施設以外にも、建物、道路、鉄道、集落、水路、金融サービス、医療施設、港湾、POI、空港など多様なカテゴリがあります。
+
+In addition to education facilities, HOT OSM Extracts provide various other categories such as buildings, roads, railways, populated places, waterways, financial services, health facilities, sea ports, points of interest, and airports.
